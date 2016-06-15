@@ -44,8 +44,14 @@ source activate projectverbosity
 
 # Usage
 The main application is contained in the python module in `verbosity/gui/MainWindow.py`
+
+Make sure you have the most recent version of the `master` branch of the git repository
+```
+git pull origin master
+```
+
 Navigate into the subdirectory `verbosity/gui`
 To invoke the application:
 ```
 python MainWindow.py
-```
+``` 
