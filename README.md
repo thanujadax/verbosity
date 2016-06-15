@@ -14,7 +14,7 @@ Interactive guide (15 min tutorial) [here](https://try.github.io/levels/1/challe
 Further Github [guides](https://guides.github.com/)
 
 ## 2. Install SDL
-This is required for PyGame.
+This is required by `PyGame`.
 
 Installation instructions can be found [here](https://wiki.libsdl.org/Installation)
 
@@ -23,7 +23,7 @@ Anaconda manages our programming environment and dependencies.
 Installation instructions can be found [here](https://docs.continuum.io/anaconda/install)
 
 ## 4. Install PyGame dependencies (Linux only)
-PyGame is required for Kivy
+`PyGame` is required by `Kivy`
 ### Ubuntu
 ```
 sudo apt-get build-dep python-pygame
