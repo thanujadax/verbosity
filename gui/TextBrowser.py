@@ -1,5 +1,6 @@
 from kivy.app import App
 from kivy.uix.button import Button
+from kivy.uix.gridlayout import GridLayout
 from kivy.uix.boxlayout import BoxLayout
 from kivy.uix.label import Label
 from kivy.uix.textinput import TextInput
@@ -17,35 +18,54 @@ class TextBrowserApp(App):
         Method called to build up the UI. Defines all the widgets involved
         '''
         # BoxLayout arranges widgets in an adjacent manner, either vertically or horizontally
-        layout = BoxLayout(padding=10, orientation='vertical')
-
-        # button
-        btn1 = Button(text="Display Selection")
-        # define callback for button press
-        btn1.bind(on_press=self.buttonClicked)
-        layout.add_widget(btn1)
+        mainLayout = BoxLayout(padding=10, orientation='vertical')
         
         # label1
         self.lbl1 = Label(text="Curent selection: ")
-        layout.add_widget(self.lbl1)
-
-        # label2
-        # self.lbl2 = Label(text="")
-        # layout.add_widget(self.lbl2)
+        mainLayout.add_widget(self.lbl1)
 
         # text input 1
         self.txt1 = TextInput(text='Type here ...', multiline=True)
         (self.txt1).bind(text=self.on_text)
-        layout.add_widget(self.txt1)
+        mainLayout.add_widget(self.txt1)
+       
+        # sub layout to hold 4 buttons to label the 4 different levels
+        buttonRowLayout = BoxLayout(padding=10, orientation='horizontal')
+        
+        # button1
+        btn1 = Button(text="L1")
+        # define callback for button press
+        btn1.bind(on_press=self.buttonClicked)
+        buttonRowLayout.add_widget(btn1)
+        
+        # button2
+        btn2 = Button(text="L2")
+        # define callback for button press
+        btn2.bind(on_press=self.buttonClicked)
+        buttonRowLayout.add_widget(btn2)
+        
+        # button3
+        btn3 = Button(text="L3")
+        # define callback for button press
+        btn3.bind(on_press=self.buttonClicked)
+        buttonRowLayout.add_widget(btn3)
+        
+        # button4
+        btn4 = Button(text="L4")
+        # define callback for button press
+        btn4.bind(on_press=self.buttonClicked)
+        buttonRowLayout.add_widget(btn4)        
 
-        return layout
+        mainLayout.add_widget(buttonRowLayout)
+        return mainLayout
 
 # button click callback
     def buttonClicked(self,btn):
         '''
-        When button is clicked, display the highlighted text in
+        When button is clicked, display the highlighted text in lbl1
         '''
         # self.lbl1.text = "Keywords: " + self.txt1.text
+        # You can get the currently selected text from the TextInput.selection_text property
         self.lbl1.text = "Current selection: " + self.txt1.selection_text
 
 # text changed callback 
@@ -59,5 +79,3 @@ class TextBrowserApp(App):
 # run app
 if __name__ == "__main__":
     TextBrowserApp().run()
-# join all items in a list into 1 big string
-
