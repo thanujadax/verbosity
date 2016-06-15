@@ -51,6 +51,11 @@ git pull origin master
 ```
 
 Navigate into the subdirectory `verbosity/gui`
+
+
+Make sure the relevant conda environment *projectverbosity* has been activated
+
+
 To invoke the application:
 ```
 python TextBrowser.py
