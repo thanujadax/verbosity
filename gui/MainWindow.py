@@ -1,9 +1,3 @@
-'''
-Created on Jun 15, 2016
-
-@author: thanuja
-'''
-
 import kivy
 from kivy.app import App
 from kivy.uix.button import Button
