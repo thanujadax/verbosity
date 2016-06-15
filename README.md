@@ -1,6 +1,6 @@
 # Setting up the environment
 This project uses python version 3.4 along with anaconda package manager. Following instructions will guide you to set up the programming environment.
-The name of the conda environment is *projectverbosity*
+
 ## 1. Install Git
 ### Windows
 Installation instructions can be found [here](https://desktop.github.com/)
