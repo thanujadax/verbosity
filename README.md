@@ -8,18 +8,25 @@ Installation instructions can be found [here](https://desktop.github.com/)
 ### General (non-Windows)
 Installation instructions can be found [here](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
 
+### BTW, what is git?
+Interactive guide (15 min tutorial) [here](https://try.github.io/levels/1/challenges/1)
+Further Github [guides](https://guides.github.com/)
+
 ## 2. Install SDL
+This is required for PyGame
 Installation instructions can be found [here](https://wiki.libsdl.org/Installation)
 
 ## 3. Install anaconda
+Anaconda manages our programming environment and dependencies
 Installation instructions can be found [here](https://docs.continuum.io/anaconda/install)
 
 ## 4. Install PyGame dependencies (Linux only)
+PyGame is required for Kivy
 ### Ubuntu
 ```
 sudo apt-get build-dep python-pygame
 ```
-## 5. Clone the project
+## 5. Clone the project from the Github repository
 ```
 git clone https://github.com/thanujadax/verbosity.git
 ```
