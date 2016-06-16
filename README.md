@@ -51,6 +51,33 @@ To activate the environment:
 source activate projectverbosity
 ```
 
+## 7. Install PyGame
+We do it separately instead of relying in the Anaconda environment set up since pip installation doesn't seem to work currently.
+
+### Windows
+Run the installer downloaded from [here](ProgramArcadeGames.com/pygame-1.9.2a0.win32-py3.4.msi)
+
+### Ubuntu
+
+##### Load required packages
+```
+sudo apt-get install mercurial libsdl1.2-dev
+sudo apt-get install libasound2-doc libglib2.0-doc python3-dev
+sudo apt-get install libsdl-ttf2.0-dev  libsdl-image1.2-dev
+sudo apt-get install libsdl-mixer1.2-dev libportmidi-dev
+sudo apt-get install libavformat-dev libswscale-dev
+sudo apt-get install libfreetype6-dev
+sudo apt-get install libsmpeg-dev
+```
+##### Use mercurial to clone current code
+```
+hg clone https://bitbucket.org/pygame/pygame
+``` 
+##### Build and install
+```
+cd pygame
+python setup.py install
+```
 # Usage
 The main application is contained in the python module in `verbosity/gui/TextBrowser.py`
 
