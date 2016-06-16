@@ -55,7 +55,7 @@ source activate projectverbosity
 We do it separately instead of relying in the Anaconda environment set up since pip installation doesn't seem to work currently.
 
 ### Windows
-Run the installer downloaded from [here](ProgramArcadeGames.com/pygame-1.9.2a0.win32-py3.4.msi)
+Run the installer downloaded from [here](http://ProgramArcadeGames.com/pygame-1.9.2a0.win32-py3.4.msi)
 
 ### Ubuntu
 
